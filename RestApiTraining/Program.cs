@@ -26,10 +26,10 @@ namespace RestApiTraining
                     var data = await ModifyTasks.Get();
                     var jObj = JsonConvert.DeserializeObject<List<Task>>(data);
 
-                    foreach(var task in jObj)
+                    foreach (var task in jObj)
                     {
                         string done = null;
-                        if(task.done)
+                        if (task.done)
                         {
                             done = "DONE";
                         }
@@ -92,7 +92,7 @@ namespace RestApiTraining
                     var prompt = Prompt.GetYesNo("You are about to clear all lists. Are you sure?", false, ConsoleColor.Red);
                     HttpClient client = new HttpClient();
 
-                    if(prompt)
+                    if (prompt)
                     {
                         var data = await ModifyTasks.Get();
                         var jObj = JsonConvert.DeserializeObject<List<Task>>(data);
