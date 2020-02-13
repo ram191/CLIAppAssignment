@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "task": "membeli susu",
+      "done": false,
+      "id": 1
+    },
+    {
+      "task": "membeli susu",
+      "done": false,
+      "id": 2
+    },
+    {
+      "task": "membeli susu",
+      "done": false,
+      "id": 3
+    }
+  ]
+}
